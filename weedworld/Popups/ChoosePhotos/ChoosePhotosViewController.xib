@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosePhotosViewController" customModule="weedworld" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="gzB-Rv-kPd" id="PXb-a8-5Xa"/>
+                <outlet property="buttonsCollectionView" destination="7Zu-aX-IXS" id="7wY-u4-sgR"/>
+                <outlet property="gradienView" destination="xBN-Y0-9YR" id="DdD-yC-Vtw"/>
+                <outlet property="pickBtn" destination="iam-2M-hwr" id="RRP-rB-7zi"/>
+                <outlet property="submitBtn" destination="Uzo-EF-lA3" id="zkK-Hu-ZuI"/>
+                <outlet property="textTF" destination="ffK-y4-iE4" id="HUW-c3-rUW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chooseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-Rv-kPd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-aX-IXS">
+                    <rect key="frame" x="0.0" y="712" width="414" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="HcM-CP-QjH"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ffg-vw-UJW">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="doa-3J-rE5"/>
+                        <outlet property="delegate" destination="-1" id="Pbl-iW-0AW"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-Y0-9YR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73L-Qd-Cxy">
+                    <rect key="frame" x="20" y="54" width="374" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tt-0l-TVT">
+                            <rect key="frame" x="0.0" y="0.0" width="114" height="35"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="arrow.backward" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                            </state>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="kl7-MF-0Hk"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKp-Ld-Iho">
+                            <rect key="frame" x="114" y="0.0" width="160" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzo-EF-lA3">
+                            <rect key="frame" x="274" y="0.0" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Cbp-pX-uj8"/>
+                                <constraint firstAttribute="height" constant="35" id="IgK-ps-olp"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Submit" image="checkmark" catalog="system">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="medium"/>
+                            </state>
+                            <connections>
+                                <action selector="submitClick:" destination="-1" eventType="touchUpInside" id="zF0-9v-H13"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Type something here.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffK-y4-iE4">
+                    <rect key="frame" x="70" y="423" width="274" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0zw-qz-OMO"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="QcB-wR-fH7"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iam-2M-hwr">
+                    <rect key="frame" x="118" y="657" width="178" height="35"/>
+                    <color key="backgroundColor" red="0.23137254900000001" green="0.08235294118" blue="0.2784313725" alpha="0.61778784745576365" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="qUR-sO-AvB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Pick from gallery" image="photo.fill" catalog="system">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pickBtnClick:" destination="-1" eventType="touchUpInside" id="xhd-hl-Pcl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Zu-aX-IXS" secondAttribute="trailing" id="5JS-08-sh1"/>
+                <constraint firstAttribute="bottom" secondItem="gzB-Rv-kPd" secondAttribute="bottom" id="5Rf-5n-plE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gzB-Rv-kPd" secondAttribute="trailing" id="9UL-Pv-3F7"/>
+                <constraint firstItem="iam-2M-hwr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.43" id="9X5-e1-Klm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="73L-Qd-Cxy" secondAttribute="trailing" constant="20" id="A2e-U0-bpM"/>
+                <constraint firstItem="7Zu-aX-IXS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IVe-zo-M4r"/>
+                <constraint firstItem="xBN-Y0-9YR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IgJ-bx-Qgg"/>
+                <constraint firstItem="gzB-Rv-kPd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JG4-Oc-liB"/>
+                <constraint firstItem="xBN-Y0-9YR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.111607" id="K49-W3-b5s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xBN-Y0-9YR" secondAttribute="trailing" id="MCK-Yd-e4S"/>
+                <constraint firstItem="iam-2M-hwr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a38-Ci-LgV"/>
+                <constraint firstItem="ffK-y4-iE4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eTB-R5-EdM"/>
+                <constraint firstItem="ffK-y4-iE4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="fYo-IU-JbF"/>
+                <constraint firstItem="gzB-Rv-kPd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ih6-kU-pXK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ffK-y4-iE4" secondAttribute="trailing" constant="70" id="o9F-SJ-PVt"/>
+                <constraint firstItem="7Zu-aX-IXS" firstAttribute="top" secondItem="iam-2M-hwr" secondAttribute="bottom" constant="20" id="oJL-3x-PBt"/>
+                <constraint firstItem="ffK-y4-iE4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oT3-j8-3Pa"/>
+                <constraint firstItem="xBN-Y0-9YR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pTW-Un-b1W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Zu-aX-IXS" secondAttribute="bottom" constant="70" id="pV3-bV-ew0"/>
+                <constraint firstItem="73L-Qd-Cxy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="v4l-VO-wcA"/>
+                <constraint firstItem="73L-Qd-Cxy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="z7H-zv-aY2"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="chooseBackground" width="541.5" height="1170.5"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

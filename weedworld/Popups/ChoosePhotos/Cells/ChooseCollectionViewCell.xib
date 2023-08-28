@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="chooseCell" id="gTV-IL-0wX" customClass="ChooseCollectionViewCell" customModule="weedworld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="83" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgH-jT-vgY">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="th3-Tp-2vJ">
+                                <rect key="frame" x="15" y="15" width="53" height="52"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.082352941176470587" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.23137254900000001" green="0.08235294118" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-eB-pGN">
+                                <rect key="frame" x="28.5" y="28.5" width="26.5" height="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="th3-Tp-2vJ" secondAttribute="trailing" constant="15" id="5rN-u7-szI"/>
+                            <constraint firstItem="t3b-eB-pGN" firstAttribute="centerX" secondItem="rgH-jT-vgY" secondAttribute="centerX" id="Ox5-2Z-NTk"/>
+                            <constraint firstAttribute="bottom" secondItem="th3-Tp-2vJ" secondAttribute="bottom" constant="15" id="PDc-uc-Dys"/>
+                            <constraint firstItem="th3-Tp-2vJ" firstAttribute="leading" secondItem="rgH-jT-vgY" secondAttribute="leading" constant="15" id="SeH-f5-7kk"/>
+                            <constraint firstItem="t3b-eB-pGN" firstAttribute="height" secondItem="th3-Tp-2vJ" secondAttribute="height" multiplier="0.5" id="XJW-kj-juk"/>
+                            <constraint firstItem="t3b-eB-pGN" firstAttribute="width" secondItem="th3-Tp-2vJ" secondAttribute="width" multiplier="0.5" id="jXD-jW-1uq"/>
+                            <constraint firstItem="t3b-eB-pGN" firstAttribute="centerY" secondItem="rgH-jT-vgY" secondAttribute="centerY" id="yi6-08-Exd"/>
+                            <constraint firstItem="th3-Tp-2vJ" firstAttribute="top" secondItem="rgH-jT-vgY" secondAttribute="top" constant="15" id="zng-R4-FnS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rgH-jT-vgY" secondAttribute="bottom" id="2Iw-hZ-tLA"/>
+                <constraint firstItem="rgH-jT-vgY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2y8-b2-39c"/>
+                <constraint firstItem="rgH-jT-vgY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NuS-Lo-rVj"/>
+                <constraint firstAttribute="trailing" secondItem="rgH-jT-vgY" secondAttribute="trailing" id="jEJ-le-zkU"/>
+            </constraints>
+            <size key="customSize" width="83" height="82"/>
+            <connections>
+                <outlet property="contentImage" destination="th3-Tp-2vJ" id="0iw-bd-YbK"/>
+                <outlet property="logoImage" destination="t3b-eB-pGN" id="BDF-xU-wFw"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+    </resources>
+</document>

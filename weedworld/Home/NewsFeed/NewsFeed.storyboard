@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nm1-MQ-al6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Feed View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="NewsFeedViewController" customModule="weedworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUX-28-Nnb">
+                                <rect key="frame" x="20" y="98" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                <connections>
+                                    <action selector="editClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="V7a-vZ-4jl"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ClJ-9E-UsU">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AoG-2f-f3P">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="Q0I-gn-23H"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="3Ib-EW-Q1V"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ClJ-9E-UsU" secondAttribute="bottom" id="Bnq-3s-ciA"/>
+                            <constraint firstItem="ClJ-9E-UsU" firstAttribute="top" secondItem="OUX-28-Nnb" secondAttribute="bottom" constant="10" id="Hud-BX-1Fd"/>
+                            <constraint firstItem="OUX-28-Nnb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="IWM-u7-8uM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ClJ-9E-UsU" secondAttribute="trailing" id="RVH-DG-Cfd"/>
+                            <constraint firstItem="ClJ-9E-UsU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cVX-Ky-5DQ"/>
+                            <constraint firstItem="OUX-28-Nnb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="mcR-UP-AIJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="044-Ca-NRJ">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamburgerMenu" id="klN-c4-uzg">
+                            <connections>
+                                <action selector="menuClick:" destination="Y6W-OH-hqX" id="m7b-35-aN0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="newsCollectionView" destination="ClJ-9E-UsU" id="Y3F-4I-4dD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pcC-8J-fHP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nm1-MQ-al6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="news" id="SiB-1Z-ocV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHC-ES-RYB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="X3Y-TS-drb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyf-3d-30u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburgerMenu" width="28" height="28"/>
+        <image name="news" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

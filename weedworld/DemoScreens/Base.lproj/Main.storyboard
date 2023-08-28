@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weedworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTX-VJ-yWi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="Wlw-wb-pvM" kind="embed" id="nuY-9U-w4m"/>
+                                </connections>
+                            </containerView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="b8p-2d-jlE">
+                                <rect key="frame" x="149.5" y="104" width="115" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="iei-lg-L0s"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="labelColor"/>
+                                <color key="trackTintColor" red="0.88235294117647056" green="0.84313725490196079" blue="1" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPQ-Df-BeO">
+                                <rect key="frame" x="40" y="686" width="59" height="26"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <color key="tintColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Skip" image="arrowRight">
+                                    <color key="titleColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViD-hO-SFC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xTX-VJ-yWi" secondAttribute="bottom" id="GMo-qa-flu"/>
+                            <constraint firstItem="b8p-2d-jlE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ObT-ia-Vqv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTX-VJ-yWi" secondAttribute="trailing" id="Qna-wN-pPq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tPQ-Df-BeO" secondAttribute="bottom" constant="150" id="eTX-uF-j9p"/>
+                            <constraint firstItem="xTX-VJ-yWi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g9E-Fb-eDP"/>
+                            <constraint firstItem="b8p-2d-jlE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="m9L-ha-Lvw"/>
+                            <constraint firstItem="tPQ-Df-BeO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sEs-S0-m35"/>
+                            <constraint firstItem="xTX-VJ-yWi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yS0-4m-Fv6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="b8p-2d-jlE" id="ezu-hX-Xxs"/>
+                        <outlet property="skipBtn" destination="tPQ-Df-BeO" id="Qkt-8K-BeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="82.366071428571431"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="cLA-NZ-pYl">
+            <objects>
+                <pageViewController storyboardIdentifier="CustomPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Wlw-wb-pvM" customClass="CustomPageViewController" customModule="weedworld" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SvP-U1-Vfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="82"/>
+        </scene>
+        <!--Page Details View Controller-->
+        <scene sceneID="fbY-tA-y6Y">
+            <objects>
+                <viewController storyboardIdentifier="PageDetailsViewController" id="7qP-gQ-5v6" customClass="PageDetailsViewController" customModule="weedworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUF-t6-PvA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLx-tv-C2V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-Pa-yzz">
+                                <rect key="frame" x="40" y="194" width="274" height="149"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Connect with like-minded people">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gfs-FO-NWi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bLx-tv-C2V" firstAttribute="leading" secondItem="Gfs-FO-NWi" secondAttribute="leading" id="6re-DY-hwJ"/>
+                            <constraint firstAttribute="bottom" secondItem="bLx-tv-C2V" secondAttribute="bottom" id="Aop-tz-WpG"/>
+                            <constraint firstItem="zTF-Pa-yzz" firstAttribute="leading" secondItem="Gfs-FO-NWi" secondAttribute="leading" constant="40" id="B5Q-vb-Mua"/>
+                            <constraint firstItem="zTF-Pa-yzz" firstAttribute="top" secondItem="Gfs-FO-NWi" secondAttribute="top" constant="150" id="SO6-SV-Z8q"/>
+                            <constraint firstAttribute="trailing" secondItem="zTF-Pa-yzz" secondAttribute="trailing" constant="100" id="Uwg-iu-1ip"/>
+                            <constraint firstItem="bLx-tv-C2V" firstAttribute="top" secondItem="xUF-t6-PvA" secondAttribute="top" id="Uwy-uu-utF"/>
+                            <constraint firstItem="Gfs-FO-NWi" firstAttribute="trailing" secondItem="bLx-tv-C2V" secondAttribute="trailing" id="ksC-vp-aju"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageDetails" destination="bLx-tv-C2V" id="kfA-T7-Qja"/>
+                        <outlet property="titleText" destination="zTF-Pa-yzz" id="yq3-2e-SqB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOF-Id-qkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowRight" width="20" height="20"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

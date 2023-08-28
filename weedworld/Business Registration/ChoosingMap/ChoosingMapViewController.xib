@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosingMapViewController" customModule="weedworld" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmBtn" destination="cQE-LA-DXh" id="Sdx-bv-YmM"/>
+                <outlet property="mapView" destination="hO0-SH-hzw" id="Abp-86-gIG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hO0-SH-hzw" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-LA-DXh">
+                    <rect key="frame" x="20" y="738" width="353" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yJz-Nq-yKN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Confirm">
+                        <color key="titleColor" red="0.20392156859999999" green="0.74972676569999996" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmClick:" destination="-1" eventType="touchUpInside" id="EgL-GL-wz8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hO0-SH-hzw" secondAttribute="bottom" id="GAY-cr-8BA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cQE-LA-DXh" secondAttribute="trailing" constant="20" id="L3b-fd-LVI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cQE-LA-DXh" secondAttribute="bottom" constant="30" id="UeD-dV-rKj"/>
+                <constraint firstItem="cQE-LA-DXh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="eGQ-PC-f4p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hO0-SH-hzw" secondAttribute="trailing" id="eKI-kg-am3"/>
+                <constraint firstItem="hO0-SH-hzw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hUm-Oj-R71"/>
+                <constraint firstItem="hO0-SH-hzw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ivn-tw-oLx"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

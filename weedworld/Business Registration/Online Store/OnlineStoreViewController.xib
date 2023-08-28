@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnlineStoreViewController" customModule="weedworld" customModuleProvider="target">
+            <connections>
+                <outlet property="bilingView" destination="btQ-IO-uYt" id="CyF-Up-vZS"/>
+                <outlet property="businessBtn" destination="z3g-hU-wSP" id="TIP-wK-Bb1"/>
+                <outlet property="businessNameTF" destination="sSb-Pr-NVA" id="dPJ-7k-tQh"/>
+                <outlet property="emailTF" destination="HqK-ch-Wgu" id="CQM-w3-jVU"/>
+                <outlet property="licenseNoTF" destination="Y1u-lo-37A" id="VgI-BQ-uCw"/>
+                <outlet property="pdfStack" destination="RvQ-SA-fBX" id="8tz-9n-Jzf"/>
+                <outlet property="phoneTF" destination="mgC-m6-7CY" id="OGL-3a-Ns4"/>
+                <outlet property="radioBtn" destination="SPj-k8-lxD" id="7jn-5a-cYy"/>
+                <outlet property="registerBtn" destination="ose-m6-Lrc" id="AwM-Pr-2rX"/>
+                <outlet property="uploadPDFBtn" destination="Itf-M9-6gX" id="kWR-jz-BUG"/>
+                <outlet property="usedForStack" destination="j1O-OC-wes" id="iNV-cP-k1Z"/>
+                <outlet property="userForBtn" destination="Zz1-vs-2J8" id="6FL-md-M9i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="websiteTF" destination="Gbs-qC-Yql" id="9bx-9h-wiu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kho-eA-HOf">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiW-l4-hjg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="60H-SB-kk3">
+                                    <rect key="frame" x="20" y="20" width="374" height="605"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YVY-em-W8Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="35.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ndx-js-tg4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessType" translatesAutoresizingMaskIntoConstraints="NO" id="kt2-Y6-L8N">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="ZKY-ZQ-6Ad"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-hU-wSP">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="25"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Business type" image="chevron.down" catalog="system">
+                                                                <color key="titleColor" systemColor="systemGray3Color"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iV9-9Q-cL6">
+                                                    <rect key="frame" x="0.0" y="35" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utx-t0-BGf">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="17C-V8-FiK"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XKj-qL-dw4">
+                                            <rect key="frame" x="0.0" y="80.5" width="374" height="35.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jx2-0P-wk7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessType" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-H0-QCT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="iC0-Qh-UGg"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSb-Pr-NVA">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="25"/>
+                                                            <color key="tintColor" red="0.36389529710000001" green="0.68744724989999995" blue="0.35427278280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-N8-NgH">
+                                                    <rect key="frame" x="0.0" y="35" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDF-kS-dwn">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="1nC-ny-aO2"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j1O-OC-wes">
+                                            <rect key="frame" x="0.0" y="138.5" width="374" height="10.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nwv-gB-rH1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mari" translatesAutoresizingMaskIntoConstraints="NO" id="B7S-a7-sQs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="0.0"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="gSz-d8-15R"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz1-vs-2J8">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="0.0"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Use for" image="chevron.down" catalog="system">
+                                                                <color key="titleColor" systemColor="systemGray3Color"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfE-IC-oOG">
+                                                    <rect key="frame" x="0.0" y="10" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ud-Bf-F3w">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="SzL-5x-L5q"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AKB-Gy-3pT">
+                                            <rect key="frame" x="0.0" y="161" width="374" height="33"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="79o-nd-ntE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="22.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneIcon" translatesAutoresizingMaskIntoConstraints="NO" id="znm-JM-CZl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="22.5"/>
+                                                            <color key="tintColor" red="0.20784313730000001" green="0.69803921570000005" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="cvU-7h-uvE"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-m6-7CY">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="22.5"/>
+                                                            <color key="tintColor" red="0.36389529710000001" green="0.68744724989999995" blue="0.35427278280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSr-kk-PxQ">
+                                                    <rect key="frame" x="0.0" y="32.5" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IN-fw-cmG">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="ezR-FH-K5l"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rpn-xr-ziC">
+                                            <rect key="frame" x="0.0" y="239" width="374" height="32"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8tE-5w-UZ6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="license" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-4V-SHC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="21.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="mDu-2f-Mrl"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="License no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1u-lo-37A">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="21.5"/>
+                                                            <color key="tintColor" red="0.36389529710000001" green="0.68744724989999995" blue="0.35427278280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-Te-y0m">
+                                                    <rect key="frame" x="0.0" y="31.5" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exa-Fq-ezP">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="peX-sX-o7c"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ui-5X-mVZ">
+                                            <rect key="frame" x="0.0" y="316" width="374" height="32"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nGu-Mz-0hS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="bCw-Xh-TzM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="21.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="dWV-P2-zD7"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqK-ch-Wgu">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="21.5"/>
+                                                            <color key="tintColor" red="0.36389529710000001" green="0.68744724989999995" blue="0.35427278280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rQ-uA-za4">
+                                                    <rect key="frame" x="0.0" y="31.5" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QV-1h-TjI">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="ibp-sT-u7c"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ac-ed-zCp">
+                                            <rect key="frame" x="0.0" y="393" width="374" height="32"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="toE-p5-lez">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="Shx-Ty-2UO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="21.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="SCH-Wh-X4N"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbs-qC-Yql">
+                                                            <rect key="frame" x="30" y="0.0" width="344" height="21.5"/>
+                                                            <color key="tintColor" red="0.36389529710000001" green="0.68744724989999995" blue="0.35427278280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-va-otS">
+                                                    <rect key="frame" x="0.0" y="31.5" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBc-Is-qZp">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="y4h-8E-G5c"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RvQ-SA-fBX">
+                                            <rect key="frame" x="0.0" y="447.5" width="374" height="10.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gql-9L-J5d">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="T43-4W-iKQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="0.0"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="cqu-2N-vnt"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itf-M9-6gX">
+                                                            <rect key="frame" x="30" y="0.0" width="314" height="0.0"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Upload PDF to your license">
+                                                                <color key="titleColor" systemColor="systemGray3Color"/>
+                                                            </state>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addBtn" translatesAutoresizingMaskIntoConstraints="NO" id="JpE-lw-hKM">
+                                                            <rect key="frame" x="354" y="0.0" width="20" height="0.0"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="o1i-76-m3u"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt3-QA-8PE">
+                                                    <rect key="frame" x="0.0" y="10" width="374" height="0.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-KN-5MC">
+                                                            <rect key="frame" x="20" y="0.0" width="354" height="0.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="0.5" id="5WM-mT-9Ql"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="0.0"/>
+                                                </stackView>
+                                            </subviews>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="Bin-fX-LbO" appends="YES" id="kQB-iC-q7p"/>
+                                            </connections>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btQ-IO-uYt">
+                                            <rect key="frame" x="0.0" y="470" width="374" height="50"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-HE-QoV">
+                                                    <rect key="frame" x="40" y="10" width="294" height="30"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaY-ck-9cE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Biling information" image="chevron.right" catalog="system">
+                                                                <color key="titleColor" systemColor="linkColor"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="BMK-HE-QoV" firstAttribute="leading" secondItem="btQ-IO-uYt" secondAttribute="leading" constant="40" id="FgC-Xd-M7S"/>
+                                                <constraint firstAttribute="trailing" secondItem="BMK-HE-QoV" secondAttribute="trailing" constant="40" id="T5y-UN-G0h"/>
+                                                <constraint firstAttribute="height" constant="50" id="YqC-ne-ed9"/>
+                                                <constraint firstAttribute="bottom" secondItem="BMK-HE-QoV" secondAttribute="bottom" constant="10" id="p4J-Zx-txf"/>
+                                                <constraint firstItem="BMK-HE-QoV" firstAttribute="top" secondItem="btQ-IO-uYt" secondAttribute="top" constant="10" id="tRc-Gr-Os4"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-ht-lt4">
+                                            <rect key="frame" x="0.0" y="565" width="374" height="40"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6yt-Ko-fi5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="40"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPj-k8-lxD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="14" id="FOa-Ji-Chi"/>
+                                                                <constraint firstAttribute="width" constant="14" id="vhT-ql-C4f"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="systemGray3Color"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="circle.fill" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="radioClick:" destination="-1" eventType="touchUpInside" id="euJ-E5-ar5"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZ2-nd-uyg">
+                                                            <rect key="frame" x="0.0" y="14" width="14" height="26"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering to Weed World I agree to Terms of service as well as the cotent policy." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vJ-po-J5W">
+                                                    <rect key="frame" x="24" y="0.0" width="350" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kCl-YV-4k2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ose-m6-Lrc">
+                                    <rect key="frame" x="83" y="670" width="248" height="48"/>
+                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="cF4-7S-J8l"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Register">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="1Ae-6c-aia"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="60H-SB-kk3" firstAttribute="leading" secondItem="tiW-l4-hjg" secondAttribute="leading" constant="20" id="CAK-kG-0Gr"/>
+                                <constraint firstAttribute="trailing" secondItem="60H-SB-kk3" secondAttribute="trailing" constant="20" id="DkV-YV-yDN"/>
+                                <constraint firstItem="60H-SB-kk3" firstAttribute="top" secondItem="tiW-l4-hjg" secondAttribute="top" constant="20" id="bGY-t5-k1O"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ose-m6-Lrc" secondAttribute="bottom" constant="25" id="evk-8p-Raj"/>
+                                <constraint firstItem="ose-m6-Lrc" firstAttribute="centerX" secondItem="tiW-l4-hjg" secondAttribute="centerX" id="nyd-zh-8cI"/>
+                                <constraint firstItem="ose-m6-Lrc" firstAttribute="top" secondItem="60H-SB-kk3" secondAttribute="bottom" constant="45" id="xTv-7W-G4Z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="tiW-l4-hjg" firstAttribute="top" secondItem="Kho-eA-HOf" secondAttribute="top" id="94H-7E-NQi"/>
+                        <constraint firstAttribute="trailing" secondItem="tiW-l4-hjg" secondAttribute="trailing" id="Het-bN-NeB"/>
+                        <constraint firstItem="tiW-l4-hjg" firstAttribute="leading" secondItem="Kho-eA-HOf" secondAttribute="leading" id="TBR-uq-FPv"/>
+                        <constraint firstItem="tiW-l4-hjg" firstAttribute="height" secondItem="Kho-eA-HOf" secondAttribute="height" priority="250" id="ZBH-aF-ZvX"/>
+                        <constraint firstAttribute="bottom" secondItem="tiW-l4-hjg" secondAttribute="bottom" id="cfk-ct-xwK"/>
+                        <constraint firstItem="tiW-l4-hjg" firstAttribute="width" secondItem="Kho-eA-HOf" secondAttribute="width" id="ftK-0f-Ik9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="ose-m6-Lrc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="6Kg-cA-Ay2"/>
+                <constraint firstAttribute="bottom" secondItem="Kho-eA-HOf" secondAttribute="bottom" id="A18-wa-uQ8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kho-eA-HOf" secondAttribute="trailing" id="YSh-S4-U9Y"/>
+                <constraint firstItem="Kho-eA-HOf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="etG-1Q-mN4"/>
+                <constraint firstItem="Kho-eA-HOf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pT0-25-Ssv"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Bin-fX-LbO" appends="YES" id="uIc-gw-nrR"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="82"/>
+        </view>
+        <tapGestureRecognizer id="Bin-fX-LbO">
+            <connections>
+                <action selector="pdfStackTap:" destination="-1" id="qVp-0h-qOu"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="PhoneIcon" width="14.5" height="22.5"/>
+        <image name="addBtn" width="20" height="21.5"/>
+        <image name="businessType" width="24" height="25"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="email" width="20" height="16"/>
+        <image name="license" width="16" height="16"/>
+        <image name="mari" width="24" height="24"/>
+        <image name="pdf" width="24" height="24"/>
+        <image name="website" width="18" height="11.5"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

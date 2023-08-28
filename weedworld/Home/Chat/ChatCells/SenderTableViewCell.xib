@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SenderTableViewCell" customModule="weedworld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b32-vd-1Ob">
+                        <rect key="frame" x="54" y="12" width="250" height="41"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RwR-Mc-WgB">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="41"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-c8-mBz">
+                                <rect key="frame" x="0.0" y="0.0" width="215" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's my very first message yeaah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yo-RE-2U1">
+                                        <rect key="frame" x="10" y="10" width="195" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="0Yo-RE-2U1" firstAttribute="leading" secondItem="Bif-c8-mBz" secondAttribute="leading" constant="10" id="1j9-TY-FfB"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Yo-RE-2U1" secondAttribute="bottom" constant="10" id="bvL-BF-Wei"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Yo-RE-2U1" secondAttribute="trailing" constant="10" id="lBd-r9-Ycw"/>
+                                    <constraint firstItem="0Yo-RE-2U1" firstAttribute="top" secondItem="Bif-c8-mBz" secondAttribute="top" constant="10" id="qcl-Xx-ciB"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-zh-zhz">
+                                <rect key="frame" x="225" y="0.0" width="25" height="41"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-e3-nyD">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="16"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exempleImage2" translatesAutoresizingMaskIntoConstraints="NO" id="O3K-XX-sPZ">
+                                        <rect key="frame" x="0.0" y="16" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Fia-8U-ru4"/>
+                                            <constraint firstAttribute="width" constant="25" id="dir-pe-he5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="l6p-qz-aGn"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b32-vd-1Ob" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="LMm-A6-6Su"/>
+                    <constraint firstAttribute="trailing" secondItem="b32-vd-1Ob" secondAttribute="trailing" constant="20" id="NAM-M2-9s9"/>
+                    <constraint firstAttribute="bottom" secondItem="b32-vd-1Ob" secondAttribute="bottom" constant="12" id="uBb-WJ-e7F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bubleViewSender" destination="Bif-c8-mBz" id="mPz-HC-F6l"/>
+                <outlet property="contentSenderStackWidth" destination="l6p-qz-aGn" id="eYQ-02-9jY"/>
+                <outlet property="emojiSender" destination="RwR-Mc-WgB" id="eTK-Ey-Pss"/>
+                <outlet property="imageSender" destination="O3K-XX-sPZ" id="qAY-sj-b7p"/>
+                <outlet property="textSender" destination="0Yo-RE-2U1" id="cBT-dr-m33"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="103.45982142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="exempleImage2" width="240" height="249"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

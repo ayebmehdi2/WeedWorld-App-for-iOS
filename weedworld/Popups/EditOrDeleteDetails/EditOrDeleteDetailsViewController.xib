@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditOrDeleteDetailsViewController" customModule="weedworld" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="00S-s3-gek" id="ALu-Ao-4UY"/>
+                <outlet property="bottomViewConstraint" destination="x3S-b1-uck" id="ugt-cf-yyW"/>
+                <outlet property="lineView" destination="OAQ-dP-8gh" id="vps-SV-fXN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFR-Os-2XA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="8Wn-LB-JNi" appends="YES" id="8HX-gs-B7P"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00S-s3-gek">
+                    <rect key="frame" x="0.0" y="922" width="414" height="224"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-ms-nO2">
+                            <rect key="frame" x="20" y="10" width="374" height="99.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAQ-dP-8gh">
+                                    <rect key="frame" x="125" y="0.0" width="124" height="7"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="7" id="m82-dV-FGq"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ute-cc-Fer">
+                                    <rect key="frame" x="127" y="47" width="120" height="52.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b9Z-p9-6lr">
+                                            <rect key="frame" x="0.0" y="0.0" width="44.5" height="52.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-W1-E9C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="trash.fill" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteClick:" destination="-1" eventType="touchUpInside" id="SRx-Rt-iAO"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA4-Fs-Sya">
+                                                    <rect key="frame" x="0.0" y="32.5" width="44.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J1w-lY-I2N">
+                                            <rect key="frame" x="94.5" y="0.0" width="25.5" height="52.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNg-79-5Ls">
+                                                    <rect key="frame" x="0.0" y="0.0" width="25.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="pencil" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="editClick:" destination="-1" eventType="touchUpInside" id="tVT-YM-3CT"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-pa-Zwq">
+                                                    <rect key="frame" x="0.0" y="32.5" width="25.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="aB5-ms-nO2" firstAttribute="top" secondItem="00S-s3-gek" secondAttribute="top" constant="10" id="7Pb-G7-l9d"/>
+                        <constraint firstAttribute="trailing" secondItem="aB5-ms-nO2" secondAttribute="trailing" constant="20" id="IzS-19-qj2"/>
+                        <constraint firstItem="aB5-ms-nO2" firstAttribute="leading" secondItem="00S-s3-gek" secondAttribute="leading" constant="20" id="icX-bv-ajP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vFR-Os-2XA" secondAttribute="bottom" id="2UO-vZ-h3r"/>
+                <constraint firstItem="vFR-Os-2XA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8H2-8a-yxb"/>
+                <constraint firstItem="OAQ-dP-8gh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="Eoa-qN-lwf"/>
+                <constraint firstItem="00S-s3-gek" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="fDW-9w-2mF"/>
+                <constraint firstItem="vFR-Os-2XA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fLy-PL-KCw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="00S-s3-gek" secondAttribute="trailing" id="ip1-vY-JUq"/>
+                <constraint firstItem="00S-s3-gek" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rwl-xN-S0M"/>
+                <constraint firstAttribute="bottom" secondItem="00S-s3-gek" secondAttribute="bottom" constant="-250" id="x3S-b1-uck"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vFR-Os-2XA" secondAttribute="trailing" id="yD3-GS-K59"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="97"/>
+        </view>
+        <tapGestureRecognizer id="8Wn-LB-JNi">
+            <connections>
+                <action selector="garyViewTap:" destination="-1" id="dhn-a3-iRS"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellNews" id="gTV-IL-0wX" customClass="NewssFeedCollectionViewCell" customModule="weedworld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPE-IY-sqp">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="188"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ikT-Iy-6q1">
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="188"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AQS-RA-Dlc">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="161"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WkP-3c-w9S">
+                                        <rect key="frame" x="0.0" y="168" width="192" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xw-dp-BfY">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="20"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                                <color key="tintColor" red="0.71372562650000004" green="0.71372550729999995" blue="0.71372562650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="-" image="profileMessages">
+                                                    <color key="titleColor" red="0.71372562650000004" green="0.71372550729999995" blue="0.71372562650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-j7-9EP">
+                                                <rect key="frame" x="96" y="0.0" width="96" height="20"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal" title="-" image="profileHeartIcon2">
+                                                    <color key="titleColor" red="0.71372562650000004" green="0.71372550729999995" blue="0.71372562650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOk-9J-1wL">
+                                <rect key="frame" x="10" y="70.5" width="172" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OOk-9J-1wL" firstAttribute="leading" secondItem="BPE-IY-sqp" secondAttribute="leading" constant="10" id="1vH-Gv-Hab"/>
+                            <constraint firstItem="ikT-Iy-6q1" firstAttribute="leading" secondItem="BPE-IY-sqp" secondAttribute="leading" id="3Zk-gE-vHP"/>
+                            <constraint firstAttribute="bottom" secondItem="ikT-Iy-6q1" secondAttribute="bottom" id="9Xb-OE-8GI"/>
+                            <constraint firstItem="OOk-9J-1wL" firstAttribute="centerX" secondItem="AQS-RA-Dlc" secondAttribute="centerX" id="Mri-Wy-vtz"/>
+                            <constraint firstItem="OOk-9J-1wL" firstAttribute="centerY" secondItem="AQS-RA-Dlc" secondAttribute="centerY" id="dY9-7W-Sod"/>
+                            <constraint firstItem="ikT-Iy-6q1" firstAttribute="top" secondItem="BPE-IY-sqp" secondAttribute="top" id="rPD-Gq-G0d"/>
+                            <constraint firstAttribute="trailing" secondItem="OOk-9J-1wL" secondAttribute="trailing" constant="10" id="uWb-Qf-m6G"/>
+                            <constraint firstAttribute="trailing" secondItem="ikT-Iy-6q1" secondAttribute="trailing" id="ywn-1O-c4t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BPE-IY-sqp" secondAttribute="bottom" id="EHv-PJ-1Xb"/>
+                <constraint firstAttribute="trailing" secondItem="BPE-IY-sqp" secondAttribute="trailing" id="Gir-Sc-J3w"/>
+                <constraint firstItem="BPE-IY-sqp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SWS-Jm-qpg"/>
+                <constraint firstItem="BPE-IY-sqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h7O-xC-LlK"/>
+            </constraints>
+            <size key="customSize" width="192" height="188"/>
+            <connections>
+                <outlet property="commentsNbr" destination="0xw-dp-BfY" id="4Wo-gd-fRf"/>
+                <outlet property="likesNbr" destination="K7p-j7-9EP" id="PAf-Wd-Fgd"/>
+                <outlet property="newsImage" destination="AQS-RA-Dlc" id="Q6i-B2-9zu"/>
+                <outlet property="postLabel" destination="OOk-9J-1wL" id="Rei-sB-ZFQ"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="142.63392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profileHeartIcon2" width="20" height="20"/>
+        <image name="profileMessages" width="24.5" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
